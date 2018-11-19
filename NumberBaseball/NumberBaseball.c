@@ -49,7 +49,8 @@ void Update(guess* player, int* entry)
 		{
 			if (player->guess1 == player->guess2 || player->guess1 == player->guess3 || player->guess2 == player->guess3)
 			{
-				return *entry = -1;
+				*entry = -1;
+				return;
 			}
 			return;
 		}
